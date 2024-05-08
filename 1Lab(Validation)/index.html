@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+<script src="script.js  "></script>
+<h3>Заполнить форму:</h3>
+<form>
+    <div class="input">
+    <label>Фамилия*</label>
+    <input type="text" id="surname" required>
+    </div>
+    <div class="input">
+    <lebel>Имя*</lebel>
+    <input type="text" id="name" required>
+    </div>
+    <div class="input">
+    <lebel>E-mail</lebel>
+    <input type="text" id="email">
+    </div>
+    <div class="input">
+    <label>Телефон (0xx)xxx-xx-xx *</label>
+    <input type="text" id="tel" required>
+    </div>
+    <div class="input">
+    <label>Город*</label>
+    <select id="town" required>
+        <option>Минск</option>
+        <option>Гомель</option>
+        <option>Брест</option>
+        <option>Витебск</option>
+    </select>
+    </div>
+    <div class="input">
+    <label>Я учусь в БГТУ</label>
+    <input type="checkbox" id="checkStudy">
+    </div>
+    <div class="input">
+    <label>На каком курсе вы учитесь?*</label>
+    <input type="radio" name="course" value="1" checked>
+    <label>1</label>
+    <input type="radio" name="course" value="2">
+    <label>2</label>
+    <input type="radio" name="course" value="3">
+    <label>3</label>
+    <input type="radio" name="course" value="4">
+    <label>4</label>
+    </div>
+    <div class="input">
+    <label>Расскажите о себе*</label>
+    <br>
+    <textarea id="inform" required></textarea>
+    </div>
+    <br>
+    <input type="submit" value="Проверить" onclick="validateForm()">
+
+</form>
+</body>
+
+</html>

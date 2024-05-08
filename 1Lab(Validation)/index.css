@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.input{
+    padding: 5px 0px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}

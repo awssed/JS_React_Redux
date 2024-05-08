@@ -1,0 +1,81 @@
+.card_small
+{
+  height: 400px;
+  width: 300px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  margin: 5%;
+}
+.card_small .card_image{
+  grid-row: 1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center top;
+}
+.card_small .card-content{
+  grid-row: 2;
+  display: grid;
+  height: 50%;
+  grid-template-rows: 50% 50%;
+  padding: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card_small .card-content .card-title{
+  grid-row: 1;
+}
+.card_small .card-content .card-description
+{
+  display: flex;
+  justify-content: space-between;
+}
+.card_small .card-content .card-description .type
+{
+  color:#1E90FF;
+
+}
+.menu {
+  list-style: none;
+  padding: 0;
+
+  margin-top: 3vw;
+}
+
+.menu-item {
+  display: inline-block;
+  margin: 0 41% 0 0;
+  width: 3%;
+  text-align: center;
+}
+.menu-item a{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 80%;
+  position: relative;
+  align-content: center;
+}
+.menu-item a:hover
+{
+  background-color: grey;
+}
+.menu-item:last-child
+{
+  margin-right: 0;
+}
+
+
+.menu-item:last-child {
+  margin-right: 0; /* Уберите отступ у последнего элемента */
+}
+.movies
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 16%;
+  margin-left: 16%;
+}

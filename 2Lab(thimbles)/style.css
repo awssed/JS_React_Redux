@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.input{
+    padding: 5px 0px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.inf{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+.ball {
+    /*display: none;*/
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    top: -100px;
+}
+#gamezone{
+    position: relative;
+    margin-top: 10%;
+}
+.cone{
+    position: relative;
+    top: 0vw;
+    z-index: 1;
+}
+
+.cone-up {
+    margin-top: -50px;
+}
+
+#ball{
+    position: absolute;
+}
+#refresh{
+    position: relative;
+    left: 22%;
+}

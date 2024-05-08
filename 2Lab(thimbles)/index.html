@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="inf">
+<form>
+    <div class="input">
+        <label>Высота напёрстка</label>
+        <input type="number" id="height" required>
+    </div>
+    <div class="input">
+        <lebel>Ширина напёрстка</lebel>
+        <input type="number" id="width" required>
+    </div>
+    <div class="input">
+        <label>Диаметр шарика</label>
+        <input type="number" id="diam" required>
+    </div>
+    <div class="input">
+    <button type="submit" onclick="checkSize()">Сохранить</button>
+    </div>
+</form>
+<div>
+    <label>Результат</label>
+    <label id="result">0</label>
+</div>
+</div>
+<div id="gamezone">
+    <img class="cone" src="cone.png">
+    <img class="cone" src="cone.png">
+    <img class="cone" src="cone.png">
+    <div id="ball" class="ball"></div>
+</div>
+<button id="refresh" onclick="refresh()">Обновить</button>
+<script src="script.js"></script>
+</body>
+</html>
